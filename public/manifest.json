@@ -1,0 +1,18 @@
+{
+  "name": "Prismic NextJS Typescript",
+  "short_name": "Prismic NextJS Typescript",
+  "icons": [
+    {
+      "src": "/ico-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    { "src": "/ico-512x512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

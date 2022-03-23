@@ -1,0 +1,64 @@
+{
+  "id": "dynamic-page",
+  "label": "Dynamic Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "button_row": {
+              "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text_block": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "seoTitle": {
+        "config": {
+          "label": "SEO Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "seoDescription": {
+        "config": {
+          "label": "SEO Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "seoImage": {
+        "config": {
+          "label": "SEO Image",
+          "constraint": {
+            "width": 1200,
+            "height": 630
+          },
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

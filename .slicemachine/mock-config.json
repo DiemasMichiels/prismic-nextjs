@@ -1,0 +1,47 @@
+{
+  "slices": {
+    "Hero": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Description": {},
+    "TextBlock": {
+      "default": {
+        "primary": {
+          "textBlock": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 3
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ButtonRow": {
+      "default": {
+        "primary": {},
+        "items": {
+          "buttonText": {
+            "content": "Button Text"
+          }
+        }
+      }
+    }
+  },
+  "_cts": {
+    "dynamic-page": {}
+  }
+}
