@@ -1,6 +1,7 @@
 import { default as NextLink } from 'next/link'
 import { useRouter } from 'next/router'
 import { linkResolver } from '@utils/prismic/routes'
+import { PRISMIC_TYPES } from '@utils/prismic/constants'
 import type {
   FilledLinkToDocumentField,
   FilledLinkToWebField,
@@ -24,7 +25,11 @@ const Link = ({ href, children, target, onClick, className }: Props) => {
 
   if (typeof href === 'string') {
     actualHref = href
-  } else if ((href as FilledLinkToDocumentField).uid !== undefined) {
+  } else if (
+    Object.values(PRISMIC_TYPES).includes(
+      (href as FilledLinkToDocumentField).type,
+    )
+  ) {
     actualHref = linkResolver(href as FilledLinkToDocumentField)
   } else if ((href as FilledLinkToWebField).url !== undefined) {
     if ((href as FilledLinkToWebField).url.includes('https://#')) {
@@ -37,6 +42,12 @@ const Link = ({ href, children, target, onClick, className }: Props) => {
           ? '_blank'
           : undefined)
     }
+  } else {
+    return (
+      <div className={className} style={{ pointerEvents: 'none' }}>
+        {children}
+      </div>
+    )
   }
 
   return (
