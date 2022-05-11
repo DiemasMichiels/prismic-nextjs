@@ -53,12 +53,11 @@ const Link = ({ href, children, target, onClick, className }: Props) => {
   return (
     <NextLink href={actualHref}>
       <a
+        className={className}
         onClick={onClick}
-        className={`${router.pathname === actualHref ? 'active' : ''} ${
-          className ? className : ''
-        }`}
         target={actualTarget}
         rel={actualTarget === '_blank' ? 'noreferrer noopener' : undefined}
+        aria-current={router.asPath === actualHref ? 'page' : undefined}
       >
         {children}
       </a>
