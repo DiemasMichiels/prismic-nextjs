@@ -31,11 +31,13 @@
                   "config": {
                     "label": "Button Link",
                     "placeholder": "",
-                    "allowTargetBlank": false
+                    "allowTargetBlank": false,
+                    "select": null
                   },
                   "type": "Link"
                 }
-              }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -72,7 +74,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "tsx"
         }
       },
@@ -104,7 +105,8 @@
                   "type": "StructuredText"
                 }
               },
-              "items": {}
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -127,7 +129,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "tsx"
         }
       },
@@ -158,7 +159,8 @@
                   "type": "Image"
                 }
               },
-              "items": {}
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -183,7 +185,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "tsx"
         }
       },
@@ -215,7 +216,8 @@
                   "type": "StructuredText"
                 }
               },
-              "items": {}
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -248,7 +250,6 @@
         },
         "meta": {
           "fileName": "index",
-          "isDirectory": true,
           "extension": "tsx"
         }
       }
