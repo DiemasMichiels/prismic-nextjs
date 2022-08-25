@@ -1,17 +1,18 @@
 /** @type {import('next').NextConfig} */
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')({
+  disable: process.env.NODE_ENV === 'development',
+  dest: 'public',
+  register: true,
+  skipWaiting: true,
+})
 
 module.exports = withPWA({
   env: {
-    PASSWORD_PROTECT: process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production',
-  },
-  pwa: {
-    disable: process.env.NODE_ENV === 'development',
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
+    PASSWORD_PROTECT:
+      process.env.NODE_ENV !== 'development' &&
+      process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production',
   },
   reactStrictMode: true,
   webpack(config) {
