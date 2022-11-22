@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 import { DefaultSeo, NextSeo } from 'next-seo'
 import Head from 'next/head'
-import { withPasswordProtect } from '@storyofams/next-password-protect'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { PrismicProvider } from '@prismicio/react'
@@ -94,4 +93,4 @@ const App = ({
   )
 }
 
-export default process.env.PASSWORD_PROTECT ? withPasswordProtect(App) : App
+export default App

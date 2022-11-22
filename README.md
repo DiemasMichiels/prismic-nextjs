@@ -22,7 +22,6 @@ Main dependencies used:
 
 Other dependencies:
 
-- [@storyofams/next-password-protect](https://github.com/storyofams/next-password-protect) for protection of staging releases.
 - [next-pwa](https://github.com/shadowwalker/next-pwa)
 - [next-seo](https://github.com/garmeeh/next-seo)
 
@@ -48,23 +47,22 @@ Other important information that needs changing:
 
 Add following ENV variables to a file in the root names: `env.local`
 
-| Name                     | Description                                                  |
-| ------------------------ | ------------------------------------------------------------ |
-| `GA_TRACKING_ID`         | Google Analytics tracking ID                                 |
-| `STAGING_LOGIN_PASSWORD` | Password used to login op staging with next-password-protect |
+| Name             | Description                  |
+| ---------------- | ---------------------------- |
+| `GA_TRACKING_ID` | Google Analytics tracking ID |
 
 ### Running
 
 First, make sure to set the `prismicRepo`, then install the dependencies:
 
 ```bash
-yarn
+npm install
 ```
 
 After, run the development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -72,7 +70,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Then run slicemachine server:
 
 ```bash
-yarn sm
+npm run sm
 ```
 
 Open [http://localhost:9999](http://localhost:9999) to see the slicemachine interface.
