@@ -13,19 +13,13 @@ import * as gtag from '@lib/gtag'
 import { linkResolver } from '@utils/prismic/routes'
 import { repositoryName } from '@utils/prismic/client'
 import type { AppProps } from 'next/app'
-import type { PrismicDocumentWithUID } from '@prismicio/types'
-import type { DynamicPageData } from '@customtypes/dynamic-page/DynamicPage'
+import type { DynamicPageDocument } from '@slicemachine/prismicio'
 
 type PageProps = {
-  doc: PrismicDocumentWithUID<DynamicPageData>
+  doc: DynamicPageDocument
 }
 
-const App = ({
-  Component,
-  pageProps,
-}: Omit<AppProps<PageProps>, 'pageProps'> & {
-  pageProps: PageProps
-}) => {
+const App = ({ Component, pageProps }: AppProps<PageProps>) => {
   const router = useRouter()
   const { seoTitle, seoDescription, seoImage } = pageProps.doc?.data ?? {}
 

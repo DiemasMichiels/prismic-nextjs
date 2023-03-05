@@ -1,15 +1,5 @@
 import * as styled from './styled'
-import type { Slice, KeyTextField, LinkField } from '@prismicio/types'
-import type { PRISMIC_SLICES } from '@utils/prismic/constants'
-
-export type ButtonRowSlice = Slice<
-  PRISMIC_SLICES.BUTTON_ROW,
-  {},
-  {
-    buttonText: KeyTextField
-    buttonLink: LinkField
-  }
->
+import type { ButtonRowSlice } from '@slicemachine/prismicio'
 
 type Props = {
   slice: ButtonRowSlice

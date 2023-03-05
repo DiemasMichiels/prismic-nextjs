@@ -1,14 +1,6 @@
 import { PrismicRichText } from '@prismicio/react'
 import * as styled from './styled'
-import type { Slice, RichTextField } from '@prismicio/types'
-import type { PRISMIC_SLICES } from '@utils/prismic/constants'
-
-export type TextBlockSlice = Slice<
-  PRISMIC_SLICES.TEXT_BLOCK,
-  {
-    textBlock: RichTextField
-  }
->
+import type { TextBlockSlice } from '@slicemachine/prismicio'
 
 type Props = {
   slice: TextBlockSlice

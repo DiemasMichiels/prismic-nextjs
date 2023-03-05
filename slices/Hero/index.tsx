@@ -1,14 +1,6 @@
 import { PrismicRichText } from '@prismicio/react'
 import * as styled from './styled'
-import type { Slice, RichTextField } from '@prismicio/types'
-import type { PRISMIC_SLICES } from '@utils/prismic/constants'
-
-export type HeroSlice = Slice<
-  PRISMIC_SLICES.HERO,
-  {
-    title: RichTextField
-  }
->
+import type { HeroSlice } from '@slicemachine/prismicio'
 
 type Props = {
   slice: HeroSlice

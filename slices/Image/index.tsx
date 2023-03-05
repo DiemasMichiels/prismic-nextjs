@@ -1,14 +1,6 @@
 import { default as NextImage } from 'next/image'
 import * as styled from './styled'
-import type { Slice, ImageField } from '@prismicio/types'
-import type { PRISMIC_SLICES } from '@utils/prismic/constants'
-
-export type ImageSlice = Slice<
-  PRISMIC_SLICES.IMAGE,
-  {
-    image: ImageField
-  }
->
+import type { ImageSlice } from '@slicemachine/prismicio'
 
 type Props = {
   slice: ImageSlice
@@ -22,7 +14,7 @@ const Image = ({ slice }: Props) => {
       {image?.url && (
         <NextImage
           src={image.url}
-          alt={image.alt ?? undefined}
+          alt={image.alt ?? ''}
           width={image.dimensions.width}
           height={image.dimensions.height}
           layout='responsive'
