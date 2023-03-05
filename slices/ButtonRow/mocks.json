@@ -1,0 +1,45 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {},
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "buttonText",
+            {
+              "__TYPE__": "FieldContent",
+              "type": "Text",
+              "value": "Button 1"
+            }
+          ],
+          [
+            "buttonLink",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "buttonText",
+            {
+              "__TYPE__": "FieldContent",
+              "type": "Text",
+              "value": "Button 2"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

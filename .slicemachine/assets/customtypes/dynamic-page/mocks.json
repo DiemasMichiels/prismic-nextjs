@@ -1,18 +1,167 @@
 {
-  "id": "358edc24-f884-4b19-9789-272bc402fd1f",
-  "uid": "maxime-doloribus-cupiditate",
-  "type": "dynamic-page",
-  "data": {
-    "seoTitle": "matrix synergistic deliverables",
-    "seoDescription": "enable 24/365 architectures",
-    "seoImage": {
-      "dimensions": {
-        "width": 1200,
-        "height": 630
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "people"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "button_row$b301ed60-e988-4038-9a70-dabcb511ab99",
+        "name": "button_row",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "buttonText",
+                  {
+                    "__TYPE__": "FieldContent",
+                    "value": "round",
+                    "type": "Text"
+                  }
+                ],
+                [
+                  "buttonLink",
+                  {
+                    "__TYPE__": "LinkContent",
+                    "value": {
+                      "__TYPE__": "ExternalLink",
+                      "url": "http://twitter.com"
+                    }
+                  }
+                ]
+              ]
+            }
+          ]
+        }
       },
-      "alt": "Placeholder image",
-      "copyright": null,
-      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=1200&h=630&fit=crop"
-    }
+      {
+        "key": "hero$e1467d45-362c-4597-be8a-7566c9ea5734",
+        "name": "hero",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Excitement"
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "image$fc830b92-e4ef-42b1-b7da-4db4192a4c53",
+        "name": "image",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+                "width": 3168,
+                "height": 4752
+              },
+              "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+              "width": 3168,
+              "height": 4752,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "text_block$c2e57b07-fc3b-4e10-9f4e-4107fa28bd16",
+        "name": "text_block",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "textBlock": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Esse cillum eiusmod tempor deserunt veniam anim eiusmod laboris amet esse non dolor."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "seoTitle": {
+    "__TYPE__": "FieldContent",
+    "value": "chamber",
+    "type": "Text"
+  },
+  "seoDescription": {
+    "__TYPE__": "FieldContent",
+    "value": "blind",
+    "type": "Text"
+  },
+  "seoImage": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+      "width": 4024,
+      "height": 4024
+    },
+    "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?rect=0%2C956%2C4024%2C2113&w=1200&h=630",
+    "width": 1200,
+    "height": 630,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 956
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
   }
 }

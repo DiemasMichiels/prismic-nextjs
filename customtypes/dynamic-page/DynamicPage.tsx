@@ -1,28 +1,13 @@
-import Slices from '@components/slices/Slices'
-import type {
-  KeyTextField,
-  ImageField,
-  PrismicDocumentWithUID,
-} from '@prismicio/types'
-import type SliceTypes from '@slices/sliceTypes'
-
-type SEOPageData = {
-  seoTitle: KeyTextField
-  seoDescription: KeyTextField
-  seoImage: ImageField
-}
-
-export type DynamicPageData = SEOPageData & {
-  // Specify specific types if need be
-  slices: [SliceTypes]
-}
+import { SliceZone } from '@prismicio/react'
+import { components } from '@slices'
+import type { DynamicPageDocument } from '@slicemachine/prismicio'
 
 type Props = {
-  doc: PrismicDocumentWithUID<DynamicPageData>
+  doc: DynamicPageDocument
 }
 
 const DynamicPage = ({ doc }: Props) => {
-  return <Slices slices={doc.data.slices} />
+  return <SliceZone slices={doc.data.slices} components={components} />
 }
 
 export default DynamicPage

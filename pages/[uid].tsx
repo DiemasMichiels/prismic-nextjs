@@ -1,15 +1,13 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { PRISMIC_TYPES } from '@utils/prismic/constants'
 import createClient from '@utils/prismic/client'
 import Page from '@components/page/Page'
 import { default as DynamicPageType } from '@customtypes/dynamic-page/DynamicPage'
 import type { GetStaticProps, NextPage } from 'next'
-import type { DynamicPageData } from '@customtypes/dynamic-page/DynamicPage'
-import type { PrismicDocumentWithUID } from '@prismicio/types'
+import type { DynamicPageDocument } from '@slicemachine/prismicio'
 
 type Props = {
-  doc: PrismicDocumentWithUID<DynamicPageData>
+  doc: DynamicPageDocument
 }
 
 const DynamicPage: NextPage<Props> = ({ doc }) => {
@@ -38,7 +36,7 @@ export const getStaticProps: GetStaticProps = async ({
 
   try {
     const client = createClient({ previewData })
-    doc = await client.getByUID(PRISMIC_TYPES.DYNAMIC_PAGE, uid, {})
+    doc = await client.getByUID('dynamic-page', uid, {})
   } catch (error) {}
 
   return {
@@ -54,7 +52,7 @@ export async function getStaticPaths() {
 
   try {
     const client = createClient()
-    docs = await client.getAllByType(PRISMIC_TYPES.DYNAMIC_PAGE)
+    docs = await client.getAllByType('dynamic-page')
   } catch (error) {}
 
   return {
